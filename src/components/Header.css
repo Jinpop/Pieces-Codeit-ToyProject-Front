@@ -1,0 +1,25 @@
+.MainHeader {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.Logo {
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.MakeGroupBTN {
+    margin-top: 10px;
+    position: absolute;
+
+}
+
+.MakeGroupBTN:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+.Menu {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/* 토글스위치-------------------------------------------------------------------------------- */
+.ToggleShowContents {
+    display: flex;
+}
+
+.ToggleShowContents>button {
+    background: none;
+    border: none;
+}
+
+.ToggleShowContents button:hover {
+    cursor: pointer;
+}
+
+
+/* 검색바-------------------------------------------------------------------------------- */
+.SearchContainer {
+    width: 70%;
+    height: 45px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+
+.SearchContainer>input {
+    position: relative;
+    background-color: #f4f4f4;
+    width: 100%;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.SearchIcon {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.SearchIcon:hover {
+    cursor: pointer;
+}
+
+
+
+/* 드롭박스-------------------------------------------------------------------------------- */
+.DropBox {
+    z-index: 1;
+    position: relative;
+    width: 160px;
+    height: 45px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.DropBoxButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.DropBoxButton>* {
+    margin: 0 auto;
+}
+
+
+.DropBoxMenu {
+    background-color: white;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.DropBoxMenu>* {
+    margin: 0 auto;
+    margin: 24px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.DropBoxMenu>a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.FirstMenu
+{
+    font-weight: bold;
+}

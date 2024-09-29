@@ -1,0 +1,151 @@
+{
+    "currentPage": 1,
+    "totalPages": 1,
+    "totalItemCount": 2,
+    "data": [
+        {
+            "id": 1,
+            "nickname": "성진",
+            "title": "테스트용그룹명",
+            "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 2,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 3,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 4,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 5,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 6,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=9046601&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNC8yMS9DTFM2L2FzYWRhbFBob3RvXzI0MTRfMjAxNDA0MTY=&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10004",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 7,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 8,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        },
+        {
+            "id": 9,
+            "nickname": "성진2",
+            "title": "테스트용그룹",
+            "imageUrl": "",
+            "tags": [
+                "태그하나",
+                "태그둘"
+            ],
+            "location": "string",
+            "moment": "2024-09-01",
+            "isPublic": true,
+            "likeCount": 3,
+            "commentCount": 0,
+            "createdAt": "2024-02-22T07:47:49.803Z"
+        }
+    ]
+}

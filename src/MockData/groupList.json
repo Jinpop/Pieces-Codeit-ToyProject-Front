@@ -1,0 +1,73 @@
+{
+    "currentPage": 1,
+    "totalPages": 5,
+    "totalItemCount": 50,
+    "data": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "imageUrl": "https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228144115810458.jpg",
+            "isPublic": true,
+            "likeCount": 120,
+            "badgeCount": 5,
+            "postCount": 34,
+            "createdAt": "2024-01-15T12:34:56.803Z",
+            "introduction": "Loving life and enjoying the journey!"
+        },
+        {
+            "id": 2,
+            "name": "Jan Smith",
+            "imageUrl": "https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228144115810458.jpg",
+            "isPublic": true,
+            "likeCount": 98,
+            "badgeCount": 3,
+            "postCount": 28,
+            "createdAt": "2024-02-10T08:22:49.803Z",
+            "introduction": "Digital nomad exploring the world."
+        },
+        {
+            "id": 3,
+            "name": "Sam Wilson",
+            "imageUrl": "https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228144115810458.jpg",
+            "isPublic": false,
+            "likeCount": 75,
+            "badgeCount": 2,
+            "postCount": 19,
+            "createdAt": "2024-03-05T09:18:21.803Z",
+            "introduction": "Nature enthusiast and photography lover."
+        },
+        {
+            "id": 4,
+            "name": "Jane Smith",
+            "imageUrl": "https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228144115810458.jpg",
+            "isPublic": true,
+            "likeCount": 98,
+            "badgeCount": 3,
+            "postCount": 28,
+            "createdAt": "2024-02-10T08:22:49.803Z",
+            "introduction": "Digital nomad exploring the world."
+        },
+        {
+            "id": 5,
+            "name": "Sam Wilson",
+            "imageUrl": "",
+            "isPublic": false,
+            "likeCount": 75,
+            "badgeCount": 2,
+            "postCount": 19,
+            "createdAt": "2024-03-05T09:18:21.803Z",
+            "introduction": "Nature enthusiast and photography lover."
+        },
+        {
+            "id": 6,
+            "name": "Jane Smith",
+            "imageUrl": "https://www.urbanbrush.net/web/wp-content/uploads/edd/2023/02/urban-20230228144115810458.jpg",
+            "isPublic": true,
+            "likeCount": 98,
+            "badgeCount": 3,
+            "postCount": 28,
+            "createdAt": "2024-02-10T08:22:49.803Z",
+            "introduction": "Digital nomad exploring the world."
+        }
+    ]
+}
