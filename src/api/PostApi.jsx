@@ -17,7 +17,7 @@ export const PostCheckPost = async (postid, password) => {
         const response = await axios.post(POSTS_ENDPOINT + '/' + postid + '/verify-password', password)
         return response.data;
     } catch (error) {
-        console.error("Error posting data:", error.response ? error.response.data : error.message);
+        console.error("Error posting data:", error.response ? error.response.data : error.message)
     }
 }
 
@@ -50,12 +50,22 @@ export const PostComment = async (postid, params) => {
 }
 
 
-export const DeleteMemory = async ({postid, postPassword}) => {
+export const DeleteMemory = async ({ postid, postPassword }) => {
     try {
-        const response = await axios.delete(POSTS_ENDPOINT + '/' + postid, {data:{postPassword}})
+        const response = await axios.delete(POSTS_ENDPOINT + '/' + postid, { data: { postPassword } })
         return response.data;
     } catch (error) {
         console.error("Error getting data:", error.response ? error.response.data : error.message);
+        throw error;
+    }
+}
+
+export const EditMemory = async (postid, params) => {
+    try {
+        const response = await axios.put(POSTS_ENDPOINT + '/' + postid, params)
+        return response.data;
+    } catch (error) {
+        console.error("Error putting data:", error.response ? error.response.data : error.message);
         throw error;
     }
 }

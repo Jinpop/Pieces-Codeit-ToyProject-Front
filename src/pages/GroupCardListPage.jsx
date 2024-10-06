@@ -9,7 +9,7 @@ const GroupCardListPage = () => {
         <div className="GroupCardListPage">
             <PublicProvider>
                 <Header />
-                <Menu />
+                <Menu isHome={true} />
                 <GroupCardList isHome={true}/>
             </PublicProvider>
         </div>

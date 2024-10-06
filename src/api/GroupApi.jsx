@@ -96,6 +96,6 @@ export const EditGroup = async (groupid, params) => {
         const response = await axios.put(GROUP_ENDPOINT+'/'+groupid, params);
         
     } catch (error) {
-        console.error("Error posting data:", error);
+        console.error("Error puting data:", error);
     }
 };

@@ -1,16 +1,16 @@
 import "./ModalEditGroup.css"
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import SwitchOn from "../../assets/tab/SwitchOn";
 import SwitchOff from "../../assets/tab/SwitchOff";
 import { useNavigate, useParams } from "react-router-dom";
-import { EditGroup, PostMakeGroup } from "../../api/GroupApi";
+import { EditGroup } from "../../api/GroupApi";
 import { PostImageUrl } from "../../api/ImageApi";
 import CloseBtn from "../../assets/CloseBtn";
 
 const ModalEditGroup = ({ setIsEditModalOpen }) => {
     const navigate = useNavigate();
-    const {groupid} = useParams();
+    const { groupid } = useParams();
 
     const [name, setName] = useState('');
     const [groupImage, setGroupImage] = useState(null);
@@ -37,8 +37,7 @@ const ModalEditGroup = ({ setIsEditModalOpen }) => {
 
         try {
             let uploadedImageUrl;
-            if (groupImage !== null)
-            {
+            if (groupImage !== null) {
                 const imageResponse = await PostImageUrl({ "image": groupImage });
                 uploadedImageUrl = imageResponse.imageUrl;
             }
@@ -48,12 +47,19 @@ const ModalEditGroup = ({ setIsEditModalOpen }) => {
 
 
             const data = {
-                'name': name,
                 'password': password,
-                'imageUrl': uploadedImageUrl,
                 'isPublic': isPublic,
-                'introduction': introduction,
             }
+            if (name !== '') {
+                data["name"] = name;
+            }
+            if (uploadedImageUrl !== '') {
+                data["imageUrl"] = uploadedImageUrl;
+            }
+            if (introduction !== '') {
+                data['introduction'] = introduction;
+            }
+
             console.log(groupid)
             await EditGroup(groupid, data);
 

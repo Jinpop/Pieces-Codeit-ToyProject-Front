@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 import { useState } from "react";
 import { LikePost } from "../../api/PostApi";
 import ModalDeletePost from "./ModalDeletePost";
+import ModalEditPost from "./ModalEditPost";
 
 const PostDetail = ({ title, nickname, tags, location, moment, isPublic, likeCount, commentCount }) => {
     const { postid } = useParams();
@@ -29,7 +30,7 @@ const PostDetail = ({ title, nickname, tags, location, moment, isPublic, likeCou
     }
 
     const handleEdit = () => {
-
+        setIsEditOpen(true);
     }
 
     const handleDelete = () => {
@@ -39,6 +40,7 @@ const PostDetail = ({ title, nickname, tags, location, moment, isPublic, likeCou
     return (
         <>
             {isDeleteOpen ? <ModalDeletePost setIsDeleteOpen={setIsDeleteOpen}/> : ""}
+            {isEditOpen ? <ModalEditPost setIsEditOpen={setIsEditOpen}/> : ""}
             <div className="post-detail-container">
                 <div className="post-detail-header">
                     <p>{nickname} &nbsp;&nbsp;&nbsp;<span>| &nbsp;&nbsp;&nbsp;{isPublic ? "공개" : "비공개"}</span></p>
