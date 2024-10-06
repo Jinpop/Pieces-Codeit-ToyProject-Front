@@ -1,0 +1,28 @@
+.MemoryHeader {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    border-top: 1px solid #DDDDDD;
+}
+
+.MemoryHeader h2 {
+    font-size: 30px;
+}
+
+.MemoryHeader button {
+    position: absolute;
+    border: 1px solid;
+    width: 200px;
+    height: 45px;
+    /* black/black_282828 */
+    background: #282828;
+    border-radius: 6px;
+    color: white;
+    right: 5.5%;
+    margin-top: 20px;
+    cursor: pointer;
+}

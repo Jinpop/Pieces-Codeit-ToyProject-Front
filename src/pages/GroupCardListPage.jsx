@@ -1,8 +1,8 @@
 import "./GroupCardListPage.css"
-import Header from "../components/Header";
-import Menu from "../components/Menu";
-import GroupCardList from "../components/GroupCardList";
-import { PublicProvider } from "../context/publicContext"
+import Header from "../components/Other/Header";
+import Menu from "../components/Other/Menu";
+import GroupCardList from "../components/Card/GroupCardList";
+import { PublicProvider } from "../context/publicContext";
 
 const GroupCardListPage = () => {
     return (
@@ -10,7 +10,7 @@ const GroupCardListPage = () => {
             <PublicProvider>
                 <Header />
                 <Menu />
-                <GroupCardList />
+                <GroupCardList isHome={true}/>
             </PublicProvider>
         </div>
     );

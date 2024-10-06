@@ -1,12 +1,11 @@
 import { createContext, useContext, useState } from "react";
 
-// 하나의 컨텍스트 생성
 const PublicContext = createContext();
 
 // 컨텍스트 프로바이더에서 여러 상태 관리
 export const PublicProvider = ({ children }) => {
     const [toggleShowContents, setToggleShowContents] = useState(true);
-    const [order, setOrder] = useState("공감순");
+    const [order, setOrder] = useState("최신순");
     const [keyword, setKeyword] = useState("");
 
     return (

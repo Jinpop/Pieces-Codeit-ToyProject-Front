@@ -1,22 +1,31 @@
 import './GroupCard.css'
-import { NoImg } from "../assets/SampleImg"
-import SmallFavicon from "../assets/Favicon"
-import { UsePublicContext } from '../context/publicContext';
+import { NoImg } from "../../assets/SampleImg"
+import SmallFavicon from "../../assets/Favicon"
+import { UsePublicContext } from '../../context/publicContext';
+import { useNavigate } from 'react-router-dom';
 
-const GroupCard = ({ name, imageUrl, isPublic, createdAt, badgeCount, postCount, introduction, likeCount }) => {
-    const todayDate = new Date();
-    const momentDate = new Date(createdAt.substring(0, 10));
-    const DDay = Math.floor((todayDate - momentDate) / (1000 * 60 * 60 * 24));
-    const { toggleShowContents, setToggleShowContents, order, setOrder } = UsePublicContext();
+const GroupCard = ({ id, name, imageUrl, isPublic, dDay, badgeCount, postCount, introduction, likeCount }) => {
+    const { toggleShowContents } = UsePublicContext();
+    
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        if (isPublic) {
+            navigate(`/group/${id}`)
+        }
+        else {
+            navigate(`/private/group/${id}`)
+        }
+    }
 
     return (
-        <div className="card">
+        <div className="card" onClick={handleClick}>
             {toggleShowContents == true ?
-                <div className="ImgContainer"><img src={imageUrl != "" ? imageUrl : NoImg} alt="사진" /></div>
+                <div className="ImgContainer"><img src={imageUrl ? imageUrl : NoImg} alt="사진" /></div>
                 : ""
             }
             <div className="cardContent">
-                <p>D+{DDay} <span className="public">  |  {isPublic ? "공개" : "비공개"}</span></p>
+                <p>D+{dDay} <span className="public">  |  {isPublic ? "공개" : "비공개"}</span></p>
                 <p className="cardTitle">{name}</p>
                 {toggleShowContents == true ? <p>{introduction}</p> : ""}
                 <div className='cardInfo'>

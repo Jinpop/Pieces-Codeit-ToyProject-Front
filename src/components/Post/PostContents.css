@@ -1,0 +1,35 @@
+.post-contents {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.post-contents img {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.post-contents div {
+    width: 50%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: black;
+}
+
+.post-contents button {
+    width: 30%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}

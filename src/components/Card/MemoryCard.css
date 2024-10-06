@@ -1,0 +1,95 @@
+.Memorycard {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    /* 각 카드가 자체적인 박스를 가짐 */
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* 이미지 관련 css ----------------------------------------------------------------- */
+.MemoryImgContainer {
+    margin: 5%;
+    width: 90%;
+    position: relative;
+    padding-bottom: 90%;
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.MemoryImgContainer img {
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 카드 내용 관련 css ----------------------------------------------------------------- */
+.MemorycardContent {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 14px;
+}
+
+.MemorycardContent .Memorypublic {
+    color: #B8b8b8;
+}
+
+.MemorycardContent .MemorycardTitle {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+/* 태그들 */
+.MemorytagsDiv {
+    margin: 0;
+    font-size: 14px;
+    color: #B8b8b8;
+    display: flex;
+}
+
+.MemorytagsDiv p {
+    margin: 0;
+    margin-top: 7px;
+}
+
+/* 정보 ---------------------------------------- */
+.MemorycardInfo {
+    margin-top: 25px;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 100%;
+    font-size: 12px;
+    color: #B8b8b8;
+    display: flex;
+}
+
+.MemorycardInfo p {
+    margin: 2px;
+}
+
+.MemorylocaTime {
+    display: flex;
+    width: fit-content;
+}
+
+.MemorylocaTime p {
+    color: black;
+}
+
+.MemorycardInfoFavi {
+    display: flex;
+    padding: 0;
+}
+
+.MemorycardInfoFavi p {
+    margin-right: 0 auto;
+}

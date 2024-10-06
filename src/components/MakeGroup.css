@@ -1,5 +1,5 @@
 .makeGroupContainer {
-    width: 60%;
+    width: 800px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -123,7 +123,7 @@
     width: 100%;
     padding: 10px;
     /* 내부 여백 */
-    background-color: #333;
+    background-color: #000000;
     /* 배경색 */
     color: #fff;
     /* 글자색 */

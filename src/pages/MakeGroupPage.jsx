@@ -1,4 +1,4 @@
-import Header from "../components/Header";
+import Header from "../components/Other/Header";
 import { MakeGroup } from "../components/MakeGroup";
 
 const MakeGroupPage = () => {

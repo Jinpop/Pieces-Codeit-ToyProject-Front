@@ -1,0 +1,12 @@
+.comment {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.comment-border{
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid #282828;
+    padding-bottom: 10px;
+}

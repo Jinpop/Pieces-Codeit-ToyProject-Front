@@ -1,6 +1,6 @@
 import "./Header.css"
-import Logo from "../assets/Logo";
-import MakeGroupBTN from "../assets/MakeGroupBTN";
+import Logo from "../../assets/Logo";
+import MakeGroupBTN from "../../assets/MakeGroupBTN";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {

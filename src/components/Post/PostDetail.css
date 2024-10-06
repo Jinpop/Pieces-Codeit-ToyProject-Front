@@ -1,0 +1,80 @@
+.post-detail-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+/* 헤더 ---------------------------------------------------------------------------------------- */
+.post-detail-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-detail-header p {
+    font-size: 16px;
+}
+
+.post-detail-header span {
+    color: #8d8d8d;
+}
+
+.post-detail-header-edit {
+    font-size: 14px !important;
+    cursor: pointer;
+}
+
+/* 제목 ---------------------------------------------------------------------------------------- */
+.post-detail-container h2 {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+/* 태그 ----------------------------------------------------------------------------------------*/
+.post-detail-tags {
+    display: flex;
+    margin-top: 25px;
+}
+
+.post-detail-tags span {
+    margin-right: 10px;
+    color: #8d8d8d;
+    font-size: 18px;
+}
+
+/*정보  ----------------------------------------------------------------------------------------*/
+.post-detail-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-detail-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 350px;
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.post-detail-stats p {
+    font-weight: bold;
+}
+
+.post-detail-stats span {
+
+    color: #8d8d8d;
+}
+
+.like-button {
+    display: flex;
+    cursor: pointer;
+    align-items: flex-end;
+    margin-bottom: 5px;
+    bottom: 0;
+}

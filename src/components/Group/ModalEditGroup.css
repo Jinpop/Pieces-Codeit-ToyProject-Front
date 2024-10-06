@@ -1,0 +1,38 @@
+.modal-edit-group-back {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.modal-edit-group {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    width: 480px;
+    background: #ffffff;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-top: 3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-edit-group h2 {
+    margin: 0 auto;
+}
+
+.close-edit-group-modal {
+    position: absolute;
+    left: 63%;
+    top: 9%;
+    cursor: pointer;
+}
+
+.groupIntro-edit {
+    height: 200px;
+}

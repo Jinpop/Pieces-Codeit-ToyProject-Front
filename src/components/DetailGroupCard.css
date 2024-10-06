@@ -1,0 +1,137 @@
+.detailGroupCardContainer {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    min-width: 800px;
+}
+
+/* 사진 포함 그룹 정보 */
+.detailGroupInfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.detailGroupImage {
+    height: 237px;
+    aspect-ratio: 1 / 1;
+    /* 1:1 비율로 정사각형 유지 */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* 그룹 정보 */
+.detailGroupDetails {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 86%;
+    width: 80.3%;
+}
+
+.detailGroupHeader {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.detailGroupHeader span {
+    color: #888;
+}
+
+.editDetailGroupDiv {
+    font-size: 14px;
+}
+
+.editDetailGroupDiv a {
+    cursor: pointer;
+}
+
+.editDetailGroupDiv span {
+    cursor: pointer;
+}
+
+/* 그룹명 등 */
+.detailGroupMeta {
+    margin-top: 20px;
+    display: flex;
+}
+
+.detailGroupMeta h2 {
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 30px;
+}
+
+.detailGroupMeta span {
+    font-size: 18px;
+    color: black;
+    margin: 0 auto;
+    margin-left: 40px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.detailGroupIntro {
+    overflow: scroll;
+    overflow-wrap: break-word;
+    scrollbar-width: none;
+    height: 100px;
+    font-size: 18px;
+    margin: 12px 0;
+    color: black;
+}
+
+/* 배지관련 */
+.badgeSection p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.badges {
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.badgeUpperDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge {
+    font-size: 16px;
+}
+
+.badgeContainer {
+    margin-top: 10px;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-width: fit-content;
+    display: flex;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.badgeContainer p {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.LikeBtn {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0px;
+}

@@ -1,19 +1,26 @@
-import { useState } from "react";
-import SwitchOn from "../assets/tab/SwitchOn"
-import SwitchOff from "../assets/tab/SwitchOff"
-import "./MakeGroup.css"
+import { useEffect, useState } from "react";
+import SwitchOn from "../assets/tab/SwitchOn";
+import SwitchOff from "../assets/tab/SwitchOff";
+import "./MakeGroup.css";
+import { useNavigate } from "react-router-dom";
+import { PostMakeGroup } from "../api/GroupApi";
+import { PostImageUrl } from "../api/ImageApi"; // PostImageUrl 함수 import
 
 export const MakeGroup = () => {
-    const [groupName, setGroupName] = useState('');
+    const navigate = useNavigate();
+
+    const [name, setName] = useState('');
     const [groupImage, setGroupImage] = useState(null);
-    const [groupDescription, setGroupDescription] = useState('');
+    const [introduction, setIntroduction] = useState('');
     const [isPublic, setIsPublic] = useState(true);
     const [password, setPassword] = useState('');
     const [fileName, setFileName] = useState('');
+    const [isFormValid, setIsFormValid] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     const handleImageChange = (event) => {
-        setGroupImage(event.target.files[0]);
         const file = event.target.files[0];
+        setGroupImage(file);
         if (file) {
             setFileName(file.name);
         } else {
@@ -21,10 +28,37 @@ export const MakeGroup = () => {
         }
     };
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        console.log({ groupName, groupImage, groupDescription, isPublic, password });
+        setLoading(true);
+
+        if (isFormValid) {
+            try {
+                const imageResponse = await PostImageUrl({ "image": groupImage });
+                const uploadedImageUrl = imageResponse.imageUrl; 
+
+                const formData = new FormData();
+                formData.append('name', name);
+                formData.append('password', password);
+                formData.append('imageUrl', uploadedImageUrl); 
+                formData.append('isPublic', isPublic);
+                formData.append('introduction', introduction);
+
+                await PostMakeGroup(formData); 
+                alert("그룹이 성공적으로 생성되었습니다.");
+                navigate('/');
+            } catch (error) {
+                console.error("Error during form submission:", error);
+            }
+        } else {
+            alert("입력폼을 다 채워주세요!");
+        }
     };
+
+    useEffect(() => {
+        const isFormFilled = name !== '' && introduction !== '' && password !== '' && groupImage !== null;
+        setIsFormValid(isFormFilled);
+    }, [name, introduction, password, groupImage]);
 
     return (
         <div className="makeGroupContainer">
@@ -34,8 +68,8 @@ export const MakeGroup = () => {
                     <p>그룹명</p>
                     <input
                         type="text"
-                        value={groupName}
-                        onChange={(e) => setGroupName(e.target.value)}
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         placeholder="그룹명을 입력하세요"
                     />
                 </label>
@@ -54,9 +88,10 @@ export const MakeGroup = () => {
                             id="file"
                             onChange={handleImageChange}
                             accept="image/*"
-                            style={{ display: 'none' }} // 기본 파일 입력 숨기기
+                            style={{ display: 'none' }} 
                         />
                         <button
+                            type="button"
                             onClick={() => document.getElementById('file').click()}
                         >
                             파일 선택
@@ -64,20 +99,21 @@ export const MakeGroup = () => {
                     </div>
                 </label>
 
-
                 <label className="groupIntro">
                     <p>그룹 소개</p>
                     <textarea
-                        value={groupDescription}
-                        onChange={(e) => setGroupDescription(e.target.value)}
+                        value={introduction}
+                        onChange={(e) => setIntroduction(e.target.value)}
                         placeholder="그룹을 소개해 주세요"
                     />
                 </label>
                 <label>
                     <p>그룹 공개 선택</p>
                     <div className="toggleDiv">
-                        <p>공개</p>
-                        <span onClick={() => setIsPublic(!isPublic)}>{isPublic ? <SwitchOn /> : <SwitchOff />}</span>
+                        {isPublic ? <p>공개</p> : <p>비공개</p>}
+                        <span onClick={() => setIsPublic(!isPublic)}>
+                            {isPublic ? <SwitchOn /> : <SwitchOff />}
+                        </span>
                     </div>
                 </label>
                 <label>
@@ -89,8 +125,14 @@ export const MakeGroup = () => {
                         placeholder="비밀번호를 입력해 주세요"
                     />
                 </label>
-                <button type="submit" className="submitBtn">만들기</button>
+                <button
+                    type="submit"
+                    className="submitBtn"
+                    disabled={loading}
+                >
+                    만들기
+                </button>
             </form>
         </div>
-    )
-}
+    );
+};

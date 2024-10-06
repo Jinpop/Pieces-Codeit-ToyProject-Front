@@ -1,0 +1,74 @@
+.post-comment-form-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.close-post-comment-modal {
+    position: absolute;
+    right: 35%;
+    top: 17%;
+    cursor: pointer;
+}
+
+.post-comment-form-background h2 {
+    margin: 0 auto;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.post-comment-form-background form {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 480px;
+    height: 550px;
+    background: #FAFAFA;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+
+    top: 50%;
+    z-index: 1;
+}
+
+.post-comment-form-background form input,
+.post-comment-form-background form label {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 16px;
+}
+
+.post-comment-form-background form label {
+    margin-top: 25px;
+}
+
+.post-comment-form-background form input {
+    height: 45px;
+    font-size: 14px;
+    margin-top: 4px;
+    background: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 6px;
+}
+
+.comment-content {
+    height: 90px !important; 
+    display: flex;
+}
+
+.post-comment-form-background form button {
+    width: 80%;
+    margin: 0 auto;
+    height: 50px;
+    color: white;
+    background-color: black;
+    margin-top: 50px;
+    border-radius: 6px;
+    cursor: pointer;
+}
